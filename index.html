@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat Bharadwaj - Resume</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        h1 { font-size: 2.25rem; margin: 0 0 8px 0; color: #fff; }
+        .subtitle { color: var(--accent); font-size: 1.1rem; font-weight: 500; margin-bottom: 12px; }
+        .links a { color: var(--text-muted); text-decoration: none; margin-right: 16px; font-size: 0.95rem; }
+        .links a:hover { color: var(--accent); }
+        section { margin-bottom: 36px; }
+        h2 { font-size: 1.2rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 16px; }
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: var(--card-bg); border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; }
+        .card { background: var(--card-bg); border: 1px solid var(--border); padding: 20px; border-radius: 8px; margin-bottom: 16px; }
+        .card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+        .card-title { font-weight: 600; font-size: 1.1rem; }
+        .card-date { color: var(--text-muted); font-size: 0.85rem; }
+        ul { margin: 0; padding-left: 20px; color: var(--text-muted); }
+        li { margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Akshat Bharadwaj</h1>
+            <div class="subtitle">B.Tech in Computer Science & Engineering (2024 - 2028)</div>
+            <div class="links">
+                <a href="https://github.com/bugganugga-os" target="_blank">GitHub</a>
+                <a href="mailto:your-email@example.com">Email</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Education</h2>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Bachelor of Technology - Computer Science & Engineering</span>
+                    <span class="card-date">Expected Graduation: May 2028</span>
+                </div>
+                <ul>
+                    <li>Coursework: Data Structures & Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Data Structures</span>
+                <span class="skill-tag">Git & GitHub</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Project Title (e.g., Student Database System)</span>
+                    <span class="card-date">Python / SQL</span>
+                </div>
+                <ul>
+                    <li>Designed and implemented a relational database schema using SQL for tracking records.</li>
+                    <li>Built a Python interface to manage CRUD operations with input validation.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
