@@ -5,97 +5,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshat Bharadwaj - Resume</title>
     <style>
-        :root {
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --text: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent: #38bdf8;
-            --border: #334155;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111111;
+            background-color: #ffffff;
+            line-height: 1.4;
             padding: 40px 20px;
         }
-        .container {
+
+        .resume-container {
             max-width: 800px;
             margin: 0 auto;
+            background: #ffffff;
         }
+
+        /* Header Styling */
         header {
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 24px;
-            margin-bottom: 32px;
+            text-align: center;
+            margin-bottom: 20px;
         }
-        h1 { font-size: 2.25rem; margin: 0 0 8px 0; color: #fff; }
-        .subtitle { color: var(--accent); font-size: 1.1rem; font-weight: 500; margin-bottom: 12px; }
-        .links a { color: var(--text-muted); text-decoration: none; margin-right: 16px; font-size: 0.95rem; }
-        .links a:hover { color: var(--accent); }
-        section { margin-bottom: 36px; }
-        h2 { font-size: 1.2rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 16px; }
-        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
-        .skill-tag { background: var(--card-bg); border: 1px solid var(--border); padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; }
-        .card { background: var(--card-bg); border: 1px solid var(--border); padding: 20px; border-radius: 8px; margin-bottom: 16px; }
-        .card-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
-        .card-title { font-weight: 600; font-size: 1.1rem; }
-        .card-date { color: var(--text-muted); font-size: 0.85rem; }
-        ul { margin: 0; padding-left: 20px; color: var(--text-muted); }
-        li { margin-bottom: 6px; }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            color: #000000;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: #333333;
+            margin-bottom: 4px;
+        }
+
+        .contact-info a {
+            color: #0044cc;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-separator {
+            margin: 0 6px;
+            color: #666666;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1.5px solid #000000;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        /* Entry Item Layout */
+        .entry {
+            margin-bottom: 12px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 14px;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .entry-subtitle {
+            font-style: italic;
+            color: #333333;
+        }
+
+        .entry-date, .entry-location {
+            font-weight: normal;
+            font-size: 13px;
+            color: #333333;
+            text-align: right;
+        }
+
+        /* Bullet Points */
+        ul {
+            list-style-type: disc;
+            margin-top: 4px;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 13px;
+            color: #222222;
+            margin-bottom: 3px;
+            text-align: justify;
+        }
+
+        .tech-stack {
+            font-weight: normal;
+            font-size: 13px;
+            color: #333333;
+        }
+
+        /* Skills & Certifications Bullet Styling */
+        .skills-list li, .cert-list li {
+            margin-bottom: 4px;
+        }
+
+        .skill-category {
+            font-weight: bold;
+            color: #000000;
+        }
+
+        /* Print Optimization for Saving as PDF */
+        @media print {
+            body {
+                padding: 0;
+                background-color: #ffffff;
+            }
+            .resume-container {
+                max-width: 100%;
+            }
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <div class="resume-container">
+
+        <!-- HEADER -->
         <header>
-            <h1>Akshat Bharadwaj</h1>
-            <div class="subtitle">B.Tech in Computer Science & Engineering (2024 - 2028)</div>
-            <div class="links">
-                <a href="https://github.com/bugganugga-os" target="_blank">GitHub</a>
-                <a href="mailto:your-email@example.com">Email</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <h1>AKSHAT BHARADWAJ</h1>
+            <div class="contact-info">
+                <span>your.email@college.edu</span>
+                <span class="contact-separator">•</span>
+                <span>+91-XXXXXXXXXX</span>
+                <span class="contact-separator">•</span>
+                <span>City, India</span>
+            </div>
+            <div class="contact-info">
+                <a href="https://linkedin.com/in/akshatbharadwaj" target="_blank">LinkedIn</a>
+                <span class="contact-separator">•</span>
+                <a href="https://github.com/bugganugga-os" target="_blank">GitHub (bugganugga-os)</a>
             </div>
         </header>
 
+        <!-- EDUCATION -->
         <section>
-            <h2>Education</h2>
-            <div class="card">
-                <div class="card-header">
-                    <span class="card-title">Bachelor of Technology - Computer Science & Engineering</span>
-                    <span class="card-date">Expected Graduation: May 2028</span>
+            <div class="section-title">Education</div>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">[Your College / University Name]</span>
+                    <span class="entry-location">City, India</span>
+                </div>
+                <div class="entry-header">
+                    <span class="entry-subtitle">• B.Tech: Computer Science & Engineering</span>
+                    <span class="entry-date">Aug 2024 – May 2028</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+            <div class="section-title">Projects</div>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">AcadiaSync – Automated Smart Classroom & Timetable Scheduler <span class="tech-stack">(Django, CP-SAT Solver, MySQL, Tailwind)</span></span>
+                    <span class="entry-date">Smart India Hackathon 2025</span>
+                </div>
+                <div class="entry-header">
+                    <span class="entry-subtitle">(Ranked 23rd Nationally)</span>
+                    <span class="entry-date"><a href="https://github.com/bugganugga-os" target="_blank">Link</a></span>
                 </div>
                 <ul>
-                    <li>Coursework: Data Structures & Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems</li>
+                    <li>Engineered an automated constraint-satisfaction scheduling web platform using Django and Python to eliminate classroom conflicts, lab overlap, and faculty workload imbalances across university departments[cite: 3].</li>
+                    <li>Integrated Google OR-Tools (CP-SAT Solver) to process multi-variable academic constraints (faculty leave averages, room capacities, electives, shifts), cutting manual timetable generation effort by 85%[cite: 3].</li>
+                    <li>Built secure backend authentication utilizing Role-Based Access Control (RBAC) and password hashing algorithms to enforce strict data privacy across admin, faculty, and student portals[cite: 3].</li>
+                    <li>Designed relational database schemas in MySQL to manage 1,000+ course and room records, implementing schedule caching mechanisms for seamless offline access[cite: 3].</li>
+                    <li>Designed an "Academic GPS" guidance module that maps daily class schedules directly to long-term career and academic goals for students[cite: 3].</li>
                 </ul>
             </div>
         </section>
 
+        <!-- TECHNICAL SKILLS -->
         <section>
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <span class="skill-tag">C</span>
-                <span class="skill-tag">C++</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Data Structures</span>
-                <span class="skill-tag">Git & GitHub</span>
-            </div>
+            <div class="section-title">Technical Skills</div>
+            <ul class="skills-list">
+                <li><span class="skill-category">Languages:</span> C, C++, Python, Java, SQL, JavaScript, HTML/CSS</li>
+                <li><span class="skill-category">Backend & Software Engineering:</span> REST APIs, FastAPI, Django, API Design, Apache Airflow, Pydantic, Data Validation, Automation, Debugging, Code Verification, Rollback</li>
+                <li><span class="skill-category">Databases & Tools:</span> MySQL, SQLite, MongoDB, Git, GitHub, Ollama</li>
+                <li><span class="skill-category">AI / ML & Data Science:</span> Machine Learning, Deep Learning, NLP, LLMs, RAG, Prompt Engineering, LangChain, PyTorch, scikit-learn, Pandas, AWS[cite: 4]</li>
+                <li><span class="skill-category">Coursework:</span> Data Structures & Algorithms, Operating Systems, DBMS, Object-Oriented Programming (OOP), Computer Networks, System Design</li>
+            </ul>
         </section>
 
+        <!-- CERTIFICATIONS & COURSES -->
         <section>
-            <h2>Projects</h2>
-            <div class="card">
-                <div class="card-header">
-                    <span class="card-title">Project Title (e.g., Student Database System)</span>
-                    <span class="card-date">Python / SQL</span>
-                </div>
-                <ul>
-                    <li>Designed and implemented a relational database schema using SQL for tracking records.</li>
-                    <li>Built a Python interface to manage CRUD operations with input validation.</li>
-                </ul>
-            </div>
+            <div class="section-title">Certifications & Courses</div>
+            <ul class="cert-list">
+                <li><span class="skill-category">Machine Learning A-Z [2026]: ML, DL, AI with AWS, Python & R</span> — Udemy (July 2026, 49.5 Hours)[cite: 4]</li>
+                <li><span class="skill-category">Intro to Machine Learning</span> — Kaggle Learn (July 2026)[cite: 5]</li>
+            </ul>
         </section>
+
+        <!-- ACHIEVEMENTS -->
+        <section>
+            <div class="section-title">Achievements</div>
+            <ul>
+                <li>Finished in <strong>23rd Position Nationally</strong> in Smart India Hackathon (SIH 2025) among thousands of competing engineering teams with project AcadiaSync[cite: 3].</li>
+            </ul>
+        </section>
+
     </div>
+
 </body>
 </html>
